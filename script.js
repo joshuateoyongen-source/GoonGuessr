@@ -6,7 +6,7 @@ const files = [
 
 const durations = [70,69,66,56,77,77,79,84,98,87,119];
 
-let snippetLength = 1.0;
+let snippetLength = 0.7;
 let audio = new Audio();
 
 let correctFileIndex = null;
