@@ -1,10 +1,10 @@
 const files = [
   "sounds/1.mp3","sounds/2.mp3","sounds/3.mp3","sounds/4.mp3",
   "sounds/5.mp3","sounds/6.mp3","sounds/7.mp3","sounds/8.mp3",
-  "sounds/9.mp3","sounds/10.mp3","sounds/11.mp3"
+  "sounds/9.mp3","sounds/10.mp3","sounds/11.mp3","sounds/12.mp3"
 ];
 
-const durations = [70,69,66,56,77,77,79,84,98,87,119];
+const durations = [70,69,66,56,77,77,79,84,98,87,119,111];
 
 let snippetLength = 0.7;
 let audio = new Audio();
@@ -138,16 +138,16 @@ function checkAnswer() {
   if (guessedFile === correctFileIndex) {
     const timeError = Math.abs(guessedTime - correctTime);
 
-    if (timeError <= 2) score = 5;
-    else if (timeError <= 2.5) score = 4.9;
-    else if (timeError <= 3.0) score = 4.8;
-    else if (timeError <= 3.6) score = 4.7;
-    else if (timeError <= 4.1) score = 4.6;
-    else if (timeError <= 4.6) score = 4.5;
-    else if (timeError <= 5.1) score = 4.4;
-    else if (timeError <= 5.5) score = 4.3;
-    else if (timeError <= 6.0) score = 4.2;
-    else if (timeError <= 6.4) score = 4.1;
+    if (timeError <= 2.2) score = 5;
+    else if (timeError <= 2.7) score = 4.9;
+    else if (timeError <= 3.1) score = 4.8;
+    else if (timeError <= 3.7) score = 4.7;
+    else if (timeError <= 4.2) score = 4.6;
+    else if (timeError <= 4.7) score = 4.5;
+    else if (timeError <= 5.2) score = 4.4;
+    else if (timeError <= 5.6) score = 4.3;
+    else if (timeError <= 6.1) score = 4.2;
+    else if (timeError <= 6.5) score = 4.1;
     else if (timeError <= 7.5) score = 4.0;
     else if (timeError <= 8.0) score = 3.9;
     else if (timeError <= 8.4) score = 3.8;
